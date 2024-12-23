@@ -1,0 +1,37 @@
+
+.square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid gainsboro;
+    background-color: rgb(244, 244, 244);
+}
+
+table tr td, table tr th{
+    border: 1px solid gainsboro;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+button {
+    font-size: 20px;
+}
+
+h1{
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+
+#end-btn{
+    margin-top: 30px;
+}

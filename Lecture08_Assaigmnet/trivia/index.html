@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function multiple(){
+                answer = document.querySelector("#second-answer");
+                buttons = document.querySelectorAll(".multiple");
+                buttons.forEach(element => {
+                    element.disabled = "true";
+                });
+                user_answer = event.currentTarget;
+                if (user_answer === answer){
+                    event.currentTarget.style.background = "green";
+                }
+                else{
+                    event.currentTarget.style.background = "red";
+                    answer.style.background = "green";
+                }
+            }
+    
+            function free(){
+                answer = "furkan";
+                user_answer = document.querySelector("#free-text");
+                btn = document.querySelector('#free-submit');
+                if (user_answer.value === ""){
+                    window.alert("Answer must be at least 1 chr!!")
+                }
+                else if(answer === user_answer.value){
+                    user_answer.style.background = "green";
+                    user_answer.disabled =  "true";
+                    btn.disabled = "true";
+                }
+                else{
+                    user_answer.style.background = "red";
+                    user_answer.disabled =  "true";
+                    btn.disabled = "true";
+                }
+            }
+
+            function take_back(){
+                if user.is_authenticated == true
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor incidunt voluptas temporibus pariatur eum?</h3>
+                <div class="answers">
+                    <button id="first-answer"  class="multiple" onclick="multiple()">First Answer</button>
+                    <button id="second-answer"  class="multiple" onclick="multiple()">Second Answer</button>
+                    <button id="third-answer" class="multiple" onclick="multiple()">Third Answer</button>
+                    <button id="fourth-answer" class="multiple" onclick="multiple()">Fourth Answer</button>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, quibusdam?</h3>
+                <input id="free-text" type="text">
+                <button id="free-submit" onclick="free()">Sumbit</button>
+            </div>
+        </div>
+    </body>
+</html>

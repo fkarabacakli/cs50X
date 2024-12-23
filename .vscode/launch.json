@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/halilfurkankarabacakli/Desktop/cs50x/Lecture01",
+      "program": "/Users/halilfurkankarabacakli/Desktop/cs50x/Lecture01/build/Debug/outDebug"
+    }
+  ]
+}
